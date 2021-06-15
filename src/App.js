@@ -73,7 +73,8 @@ const App = () => {
         
         {tweets && tweets[1].length > 0 &&
         <div className='hashtagsSect'>
-          <h4>Filter by hashtag</h4>
+          <div className='hashtagsHeader'>
+          <h4>Filter by hashtag</h4></div>
           <HashTags hashtags={tweets[1]} />
           </div>
         }
