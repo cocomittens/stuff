@@ -1,0 +1,108 @@
+.app {
+  font: 14px/1.4 Roboto, Helvetica, Arial, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 50vw;
+}
+.app .hashtagsSect,
+.app .tweetsSect {
+  border: 1px solid #bcc2c6;
+  box-shadow: 8px 9px 5px -8px rgba(0, 0, 0, 0.75);
+}
+.app .searchSect,
+.app .tweetsSect {
+  grid-column: 1 / span 3;
+}
+.app .searchSect {
+  grid-row: 1 / span 1;
+  padding: 20px 0;
+}
+.app .searchSect input {
+  margin: 14px 0;
+  width: 100%;
+}
+.app .hashtagsSect {
+  background-color: #fff;
+  grid-row: 1 / span 2;
+  grid-column: 4 / span 2;
+  padding: 20px 20px 20px 10px;
+}
+.app .hashtagsSect h4 {
+  padding-left: 10px;
+}
+.app .hashtagsSect .hashtag {
+  background-color: #e7f3fa;
+  color: #3b94d9;
+  display: inline-block;
+  border-radius: 50px;
+  margin: 15px 0 0 10px;
+  padding: 10px 20px;
+}
+.app .tweetsSect {
+  float: left;
+  grid-row: 2 / span 4;
+}
+.app .tweetsSect div {
+  background-color: #fff;
+}
+.app .tweetsSect div:nth-child(2n) * {
+  background-color: #f8f9f9;
+}
+.app .tweetsSect .avatar {
+  display: inline-block;
+  padding: 10px 0 0 20px;
+  vertical-align: top;
+  width: 20%;
+}
+.app .tweetsSect .avatar img {
+  border-radius: 50%;
+}
+.app .tweetsSect .tweetText {
+  display: inline-block;
+  padding: 20px;
+  width: 80%;
+}
+.app .tweetsSect .tweetText .user {
+  font-weight: 700;
+}
+.app .tweetsSect .tweetText .link {
+  color: #3b94d9;
+  text-decoration: none;
+  outline: 0;
+}
+.app .tweetsSect .tweetText .link:hover {
+  color: #55acee;
+}
+@media (max-width: 1024px) {
+  #root {
+    background-color: red;
+  }
+  #root .app .hashtagsSect,
+  #root .app .searchSect,
+  #root .app .tweetsSect {
+    grid-column: 1 / span 5;
+  }
+}
+@media (max-width: 500px) {
+  #root {
+    background-color: green;
+  }
+  #root .app {
+    width: 100vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  background-color: #f8f9f9;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=main.08421ceb.chunk.css.map */
